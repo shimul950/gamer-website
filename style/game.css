@@ -296,12 +296,14 @@ nav{
 }
 .list2 ul li{
     list-style: none;
+    
 }
 .list2{
     color: #FFF;
     font-size: 20px;
     font-weight: 500;
     display: flex;
+    margin-left: -30px;
     
 
 }
@@ -316,10 +318,19 @@ nav{
 }
                 /* some-button-section-style */
   
-    .some-button{
-        padding: 100px 400px;
+    .some-button{        
+        padding: 100px 200px;
         display: grid;
-        grid-template-areas: "one one one one one";
+        grid-template-areas: 
+        "btn1 btn2 btn3"
+        "btn4 btn5 btn6"
+        "btn7 btn8 btn9";
+          
+        
+        gap: 20px;
+       
+       
+                           
         
     }
     
@@ -336,11 +347,38 @@ nav{
         background-color: #f9ecf4;
         border: none;
         
+        
     }
-    #btn-pink{
+    #btn1{
+        grid-area: btn1;
+    }
+    #btn2{
+        grid-area: btn2;
+    }
+    #btn3{
         color: var(--primary-color);
         border: 2px solid var(--primary-color);
+        grid-area: btn3;
     }
+    #btn4{
+        grid-area: btn4;
+    }
+    #btn5{
+        grid-area: btn5;
+    }
+    #btn6{
+        grid-area: btn6;
+    }
+    #btn7{
+        grid-area: btn7;
+    }
+    #btn8{
+        grid-area: btn8;
+    }
+    #btn9{
+        grid-area: btn9;
+    }
+    
                         /* footer-section-style */
     footer{
         background-color: #0B0223;
@@ -556,4 +594,65 @@ nav{
     .online-game-description {
         text-align: center;
     }
+
+                    /* career-section */
+    .career{
+        margin:50px 0px 30px -5px;
+        height:auto;
+        flex-direction: column;
+        
+    
+    }
+    .career-description{
+        margin: 0px;
+    }
+    .career-description h2,.career-description p,.career-button{
+        margin-left: 10px;
+    }
+    .career-img img{
+        width: 100%;
+    }
+                    /* button-section */
+    .some-button{
+        padding: 30px 40px;
+        grid-template-areas: 
+        "btn1"
+        "btn2"
+        "btn3"
+        "btn4"
+        "btn5"
+        "btn6"
+        "btn7"
+        "btn8"
+        "btn9";
+    }
+                /* footer-section */
+    footer{
+        padding: 10px;
+        width: 100%;
+        margin-left: -10px;
+    }
+    #gamer{
+        margin-left:50px;
+    }
+    .li1{
+        font-size: 8px;
+        gap: 15px;
+        margin-left:40px;
+    }
+    .icon img{
+        margin-top: 30px;
+        margin-right: 10px;
+       
+      
+    }
+    .li2{
+        font-size: 10px;
+        gap: 10px;
+        margin-right: 50px;
+    }
+    .end-line{
+        margin-left: 30px;
+    }
+
 }
